@@ -1,0 +1,32 @@
+[
+  {
+    "topic": "Fractions",
+    "subtopic": "Basics",
+    "explanation": "A fraction represents part of a whole. It has a numerator and denominator.",
+    "example": "1/2 means one part out of two equal parts."
+  },
+  {
+    "topic": "Fractions",
+    "subtopic": "Addition",
+    "explanation": "To add fractions with same denominator, add the numerators.",
+    "example": "1/4 + 2/4 = 3/4"
+  },
+  {
+    "topic": "Algebra",
+    "subtopic": "Variables",
+    "explanation": "A variable represents an unknown value.",
+    "example": "x + 5 = 10"
+  },
+  {
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "explanation": "Sum of interior angles = 180°.",
+    "example": "Triangle with angles 60°, 60°, 60°."
+  },
+  {
+    "topic": "Arithmetic",
+    "subtopic": "Multiplication",
+    "explanation": "Repeated addition.",
+    "example": "3 × 4 = 12"
+  }
+]
