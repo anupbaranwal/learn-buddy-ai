@@ -13,6 +13,7 @@ controller_agent = Agent(
         1. Receive a student query.
         2. Create an optimized Google Search query based on the student's topic.
         3. Extract the most relevant text from search results (summary-level).
+        4. Don't ask level or specific topic name. IF it has broader range then pick a basic subtopic from the query topic.
         
         DO NOT generate summaries, flashcards, quizzes yourself.
         These are created only by worker agents.
