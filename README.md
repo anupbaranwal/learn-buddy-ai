@@ -1,18 +1,24 @@
 📘Learn-Buddy-AI
+
 A Multi-Agent Personalized Study Assistant for Students
 
 Learn-Buddy-AI is a multi-agent generative AI system that helps students learn school topics through automatically generated summaries, flashcards, and quizzes.
 The project is built as part of the Kaggle Agents Intensive Capstone Project.
 
 The idea is simple:
+
 👉 The student chooses a subject.
+
 👉 The system fetches information for a topic in that subject.
+
 👉 Multiple AI agents work in parallel to generate learning materials.
+
 👉 Results are aggregated and presented as a learning package.
 
 This project is designed especially to support underprivileged students who may not have access to structured tutoring or personalized learning.
 
 🚀 Features (Current Status)
+
 ✔️ Implemented
 - Multi-agent architecture
 - Subject input from user
@@ -33,6 +39,7 @@ This project is designed especially to support underprivileged students who may 
 These can be added in future versions.
 
 🧠 System Overview
+
 Learn-Buddy-AI uses a modular multi-agent design, where each agent specializes in one part of the learning workflow.
 **Current Workflow:**
 ```
@@ -61,6 +68,7 @@ The primary goal of Learn-Buddy-AI is to provide:
 A future version will track user progress and recommend next topics based on weaknesses.
 
 🏗️ Project Structure
+
 ```
 learn-buddy-ai/
 │
@@ -78,6 +86,7 @@ learn-buddy-ai/
 └── requirements.txt
 ```
 ⚙️ How It Works
+
 1. User selects a topic (e.g., "Photosynthesis")
 2. The system fetches the study material from internet
 3. Run agents in sequence and parallel
@@ -93,6 +102,7 @@ AggregatorAgent merges outputs into a final structured response.
 (terminal output for now)
 
 🛠️ Running the Project
+
   1. Clone the repository
    `
    git clone https://github.com/anupbaranwal/learn-buddy-ai
@@ -104,6 +114,7 @@ AggregatorAgent merges outputs into a final structured response.
    `python src/capstone/__init__.py`
 
 ❤️ Purpose
+
 This project was built with a focus on helping underserved students who lack access to quality tutoring.
 The long-term vision is to provide:
 - Free personalized study material
@@ -112,6 +123,7 @@ The long-term vision is to provide:
 - Low-bandwidth / offline mode
 
 🙌 Acknowledgements
+
 Built as part of the **Kaggle Agents Intensive Course (2025).**
 Inspired by the mission to make learning accessible for every student.
    
