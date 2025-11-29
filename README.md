@@ -71,19 +71,26 @@ A future version will track user progress and recommend next topics based on wea
 
 ```
 learn-buddy-ai/
-│
-├── agents/
-│   ├── summary_agent.py
-│   ├── flashcard_agent.py
-│   ├── quiz_agent.py
-│   ├── weakness_agent.py
-│   ├── aggregator_agent.py
-│   └── recommendation_agent.py   (placeholder – not fully implemented)
-│
-├── controller.py      # orchestrates all agents
-├── main.py            # entry point
+├── .gitignore
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+│
+└── src/
+    ├── __init__.py
+    └── capstone/
+        ├── __init__.py
+        ├── config/
+        │   └── config.py
+        └── agents/
+            ├── aggregator_agent.py
+            ├── chat_buddy_agent.py
+            ├── controller_agent.py
+            ├── flash_card_agent.py
+            ├── parallel_agent.py
+            ├── quiz_agent.py
+            ├── root_agent.py
+            └── summary_agent.py
+
 ```
 ⚙️ How It Works
 
