@@ -17,7 +17,7 @@ async def launch_learn_buddy():
         exit()
 
     runner = InMemoryRunner(agent=root_agent)
-    response = await runner.run_debug("Photosynthesis")
+    response = await runner.run_debug(user_input)
 
 if __name__ == "__main__":
     asyncio.run(launch_learn_buddy())

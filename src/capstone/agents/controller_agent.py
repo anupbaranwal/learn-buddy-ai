@@ -1,8 +1,5 @@
 from google.adk import Agent
-from google.adk.models import Gemini
 from google.adk.tools import google_search
-
-from capstone.config.config import retry_config
 
 controller_agent = Agent(
     name="ControllerAgent",
