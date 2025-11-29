@@ -42,16 +42,32 @@ These can be added in future versions.
 
 Learn-Buddy-AI uses a modular multi-agent design, where each agent specializes in one part of the learning workflow.
 **Current Workflow:**
-```
-User → Choose Subject
-          ↓
-      Search Agent
-          ↓
-   ┌────────── parallel ───────────┐
-   ↓               ↓             ↓        ↓
-Summary Agent   Flashcard     Quiz     Weakness
-                   Agent      Agent     Agent
-   └─────────────── aggregate ───────────────→ Final Study Pack
+```mermaid
+flowchart LR
+
+    User([🧑 User])
+    LearnBuddy[[🧠 Learn Buddy Agent]]
+
+    subgraph Agents
+        Controller[🌐 Controller Agent]
+        Summary[📝 Summary Agent]
+        Flashcard[🎴 Flash Card Agent]
+        Quiz[❓ Quiz Agent]
+        Parallel[⚡ Parallel Agent]
+        Aggregator{{🔗 Aggregator Agent}}
+    end
+
+    User -->|Query| LearnBuddy
+    LearnBuddy --> Controller
+    Parallel --> Summary 
+    Parallel --> Flashcard
+    Parallel --> Quiz
+    Controller --> Parallel
+    Summary --> Aggregator
+    Flashcard --> Aggregator
+    Quiz --> Aggregator
+
+    Aggregator --> LearnBuddy -->|Final Response| User
 ```
 Study Pack Includes:
 - A simple student-friendly topic summary
@@ -132,5 +148,6 @@ The long-term vision is to provide:
 🙌 Acknowledgements
 
 Built as part of the **Kaggle Agents Intensive Course (2025).**
+
 Inspired by the mission to make learning accessible for every student.
    
